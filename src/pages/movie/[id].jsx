@@ -86,6 +86,7 @@ export const getStaticProps = async ({params}) => {
       movie: movie,
       video: video.results[0]?.key || "",
       similar: similar.results
-    }
+    },
+    revalidate: 60 * 60 * 6 // 6 hrs
   }
 }
