@@ -31,7 +31,7 @@ export default ({moviesData}) => {
 				<title>Populares</title>
 			</Head>
 			<Header title={"Filmes Populares"} path={pathname}/>
-			<div className="grid grid-cols-4 md:grid-cols-5 gap-2 md:gap-6 mt-4">
+			<div className="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-6 mt-4">
 				{movies?.map(movie => <Card key={movie.id} item={movie}/> )}
 			</div>
 			<div className="w-full flex justify-center py-3">

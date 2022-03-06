@@ -49,7 +49,7 @@ export default ({carousel, seriesData}) => {
                   Pesquisar
                 </button>
               </div>
-              <div className="grid grid-cols-4 md:grid-cols-5 gap-2 md:gap-6">
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-6">
                 {series?.map(serie => (<Card key={serie.id} item={serie} type={"tv"} />))}
               </div>
               <div className="w-full flex justify-center mt-3">

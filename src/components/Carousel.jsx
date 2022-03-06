@@ -39,10 +39,10 @@ export default ({items}) => {
             </div>
             <ul ref={containerRef} className={`flex overflow-x-auto gap-4 mt-2 ${styles.scrollNone}`}>
                 {items.map(item => (
-                    <div key={item.id} className="flex-none w-14 sm:w-20 flex-col">
+                    <div key={item.id} className="flex-none w-20 sm:w-26 flex-col">
                         <li className="flex-none"
                             onClick={() => handleSelected(item)}>
-                            <img className="w-full object-fit cursor-pointer"
+                            <img className="w-full cursor-pointer"
                             src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2${item.poster_path}`}
                             onError={e => e.target.src = "/img/_.jpg"} 
                             alt={item.title || item.name}/>
