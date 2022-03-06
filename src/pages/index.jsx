@@ -50,7 +50,7 @@ export default ({carousel, moviesData}) => {
               Pesquisar
             </button>
         </div>
-        <div className="flex gap-4 w-full flex-wrap p-2 justify-center">
+        <div className="grid grid-cols-4 md:grid-cols-5 gap-2 md:gap-6">
           {movies?.map(movie => (<Card  key={movie.id} item={movie} />))}
         </div>
         <div className="w-full flex justify-center mt-3">
