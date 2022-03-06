@@ -38,15 +38,17 @@ export default ({type, handleActiveModal}) => {
 						placeholder="Pesquisar"
 						/>
 					</form>
-					<div className="w-full flex flex-wrap gap-2 justify-center p-2">
+					<div className="w-full justify-center p-2">
 						{items.length < 1 ? <div className="bg-background-700 w-full absolute 
 						top-1/2 -translate-y-1/2 flex justify-center p-5 sm:p-10">
 							<h1 className="text-5xl text-gray-400 -tracking-wider font-sans font-bold">
 								{type === "tv" ? "SÉRIES" : "FILMES"}
 							</h1>
 						</div>
-						: items?.map(item => <Card key={item.id}
+						: <div className="grid w-full grid-cols-4 sm:grid-cols-5 gap-2 sm:gap-4">
+							{items?.map(item => <Card key={item.id}
 							item={item} type={item.title ? "movie" : "tv"}/>)}
+						  </ div> }
 					</div>
 				</div>
 		</div>

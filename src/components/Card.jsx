@@ -16,7 +16,7 @@ export default ({item, type}) => {
             <span className="px-1 w-full text-gray-200 whitespace-nowrap overflow-hidden text-ellipsis text-base">
                 {item.title || item.name}
             </span>
-            <span className="px-1 w-full text-sm text-gray-500 overflow-hidden text-ellipsis">
+            <span className="px-1 w-full text-xs sm:text-sm text-gray-500 overflow-hidden text-ellipsis">
                 {item.release_date?.split('-').reverse().join('/') || item.first_air_date?.split('-').reverse().join('/')}
             </span>
         </div>
